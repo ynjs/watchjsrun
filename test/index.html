@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchJSRun</title>
+</head>
+<body>
+    <div id="app">
+        {{title}}
+    </div>
+    <script type="module">
+        import {createApp} from "https://cdn.jsdelivr.net/npm/vue@3.0.11/dist/vue.esm-browser.js";
+        import WatchJSRun from "../src/index.js";
+        const WatchCreateApp = WatchJSRun(createApp);
+        WatchCreateApp(WatchJSRun({
+            data(){
+                return {
+                    title:"标题"
+                }
+            }
+        })).mount('#app')
+    </script>
+</body>
+</html>

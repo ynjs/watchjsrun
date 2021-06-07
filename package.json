@@ -1,0 +1,8 @@
+{
+  "name": "watchjsrun",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ynjs/watchjsrun.git",
+  "author": "xczq <290353142@qq.com>",
+  "license": "MIT"
+}
